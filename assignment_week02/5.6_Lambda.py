@@ -1,4 +1,4 @@
-# 1. 다음 도시 목록을 인구수 기준으로 정렬하세요.
+'''1. 다음 도시 목록을 인구수 기준으로 정렬하세요.'''
 cities = [
     {"name": "서울", "population": 9700000},
     {"name": "부산", "population": 3400000},
@@ -9,7 +9,7 @@ sort_cities = sorted(cities, key=lambda x: x["population"])
 for i in sort_cities:
     print(f"{i["name"]}: {i["population"]:,}명")
 
-# 2. 문자열 리스트를 정수 리스트로 변환하고, 각 숫자에 100을 더하세요.
+'''2. 문자열 리스트를 정수 리스트로 변환하고, 각 숫자에 100을 더하세요.'''
 str_numbers = ["10", "20", "30", "40", "50"]
 
 #lambda
@@ -19,7 +19,7 @@ print(int_numbers_lambda)
 int_numbers_comp = [int(i)+100 for i in str_numbers]
 print(int_numbers_comp)
 
-# 3. 할인율이 20% 이상인 상품만 추출하세요.
+'''3. 할인율이 20% 이상인 상품만 추출하세요.'''
 products = [
     {"name": "노트북", "discount": 15},
     {"name": "마우스", "discount": 25},
