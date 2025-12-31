@@ -181,7 +181,6 @@ class EC2Manager:
                 cnt += 1
         return cnt
 
-
 # 인스턴스 생성
 web = EC2Instance("i-001", "web-server")
 db = EC2Instance("i-002", "db-server")
